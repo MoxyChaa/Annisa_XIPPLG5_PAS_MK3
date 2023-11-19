@@ -1,0 +1,39 @@
+body {
+    /* untuk background dari candy crush */
+    background: url("./wallpaper.png") no-repeat center center fixed;
+    /* ukuran dari background akan menutupi seluruh area element */
+    background-size: cover;
+    /* style font yang digunakan */
+    font-family: Arial, Helvetica, sans-serif;
+    /* warna dari font */
+    color: #FF9EAA;
+    /* align text */
+    text-align: center;
+}
+
+/* seletor untuk elemen dengan ID "board" */
+#board {
+    /* menetapkan lebar */
+    width: 450px;
+    /* menetapkan tinggi */
+    height: 450px;
+    /* menetapkan warna dari background */
+    background-color: #FFD1DA;
+    /* menetapkan ketebalan dan warna border */
+    border: 5px solid #E48586;
+    /* melengkungkan sudut dari board */
+    border-radius: 10px;
+    /* Menetapkan margin atas dan bawah 0 pixel, 
+    sementara margin kiri dan kanan diatur otomatis agar elemen board berada di tengah halaman */
+    margin: 0 auto;
+    /* mengaktifkan model tata letak fleksibel untuk elemen board */
+    display: flex;
+    /* memberikan instruksi untuk membungkus item flex ke baris baru jika tidak cukup ruang di sampingnya */
+    flex-wrap: wrap;
+}
+
+/* untuk ukuran potongan candy di dalam board dengan jumlah 9:9 */
+#board img {
+    width: 50px;
+    height: 50px;
+}
